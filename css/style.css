@@ -1,0 +1,92 @@
+/*imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav area */
+header {
+    width:100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav-logo area*/
+.logo {
+    margin:1.5em 3.25em;
+    display: flex;
+}
+.logo-img {
+    width:35px;
+}
+
+.logo-text {
+    margin:auto 0.25rem;
+    color: #0E0E0E;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.2%; /* 14.664px */
+    
+}
+
+/* nav-text area*/
+
+.nav-list {
+    display:flex;
+    list-style-type: none;
+    margin: auto 0;
+
+}
+
+.nav-list li {
+    margin: auto 2em;
+    color: #090909;
+    font-family: 'Source Sans 3';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+    text-transform:uppercase;
+}
+
+
+/*Banner area*/
+
+.banner {
+    background-image:url('../images/banner.png');
+    background-size: 100% auto;
+    background-position: 50% 75%;
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-family: 'Source Sans 3'; 
+    justify-content: flex-end;
+}
+
+.banner-date {
+    text-transform: uppercase;
+    font-size: 0.75rem; 
+}
+.banner-head {
+    font-size:2rem;
+}
+
+
+.banner-date, .banner-head, .banner-subheading {
+    margin: 0vw 5vw;
+    
+}
+
+.banner-subheading {
+    margin-bottom: 2rem;
+}
