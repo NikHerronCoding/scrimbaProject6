@@ -6,6 +6,8 @@ A combination of the css grid, dynamic font sizes, dynamic margin sizes, and med
     <head>
         <title>My Learning Journal</title>
         <link rel="stylesheet" href="../css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     </head>
     <body>
         <header>
@@ -29,14 +31,39 @@ A combination of the css grid, dynamic font sizes, dynamic margin sizes, and med
         </header>
         <div class="banner">
             <p class="banner-date">oct 21, 2023</p>
-            <h1 class="banner-head">My new journey as a bootcamp student.</h1>
+            <h1 class="banner-head" id="banner-head">My new journey as a bootcamp student.</h1>
             <p class="banner-subheading">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers. </p>
 
         </div>
 
+        <div class="banner-info" id="banner info">
+            <img src="../images/banner.png" class="info-image">
+            <h2 class="banner-info-head">How I stay committed to learning</h2>
+            <p class="banner-info-text">
+                I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.
+            </p>
+
+            <p class="banner-info-text">
+                While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world.
+            </p>
+
+            <h2 class="banner-info-head">How I got started</h2>
+            <p class="banner-info-text">
+                I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.
+            </p>
+
+            <p class="banner-info-text">
+                That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.
+            </p>
+
+            <h2 class="recent-posts-header"> Recent Posts </h2>
+
+        </div>
+
+
         <div class="blog-holder">
-            <div class="blog-card" id="1">
-                <img src="./images/" alt="alt-text">
+            <div class="blog-card" id="b1">
+                <img src="../images/blog1.png" alt="alt-text">
                 <p class="blog-date">Oct 21, 2023</p>
                 <h2 class="blog-heading"><a src="./blog">Blog one</a></h2>
                 <p class="blog-intro">
@@ -44,46 +71,46 @@ A combination of the css grid, dynamic font sizes, dynamic margin sizes, and med
                 </p>
             </div>
 
-            <div class="blog-card" id="2">
-                <img src="./images/" alt="alt-text">
+            <div class="blog-card" id="b2">
+                <img src="../images/blog2.png" alt="alt-text">
                 <p class="blog-date">Oct 21, 2023</p>
-                <h2 class="blog-heading"><a src="./blog">Blog one</a></h2>
+                <h2 class="blog-heading"><a src="./blog">Blog Two</a></h2>
                 <p class="blog-intro">
                     I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path. 
                 </p>
             </div>
 
-            <div class="blog-card" id="3">
-                <img src="./images/" alt="alt-text">
+            <div class="blog-card" id="b3">
+                <img src="../images/blog3.png" alt="alt-text">
                 <p class="blog-date">Oct 21, 2023</p>
-                <h2 class="blog-heading"><a src="./blog">Blog one</a></h2>
+                <h2 class="blog-heading"><a src="./blog">Blog Three</a></h2>
                 <p class="blog-intro">
                     I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path. 
                 </p>
             </div>
 
-            <div class="blog-card" id="4">
-                <img src="./images/" alt="alt-text">
+            <div class="blog-card" id="b4">
+                <img src="../images/blog4.png" alt="alt-text">
                 <p class="blog-date">Oct 21, 2023</p>
-                <h2 class="blog-heading"><a src="./blog">Blog one</a></h2>
+                <h2 class="blog-heading"><a src="./blog">Blog Four</a></h2>
                 <p class="blog-intro">
                     I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path. 
                 </p>
             </div>
 
-            <div class="blog-card" id="5">
-                <img src="./images/" alt="alt-text">
+            <div class="blog-card" id="b5">
+                <img src="../images/blog5.png" alt="alt-text">
                 <p class="blog-date">Oct 21, 2023</p>
-                <h2 class="blog-heading"><a src="./blog">Blog one</a></h2>
+                <h2 class="blog-heading"><a src="./blog">Blog Five</a></h2>
                 <p class="blog-intro">
                     I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path. 
                 </p>
             </div>
 
-            <div class="blog-card" id="6">
-                <img src="./images/" alt="alt-text">
+            <div class="blog-card" id="b6">
+                <img src="../images/blog6.png" alt="alt-text">
                 <p class="blog-date">Oct 21, 2023</p>
-                <h2 class="blog-heading"><a src="./blog">Blog one</a></h2>
+                <h2 class="blog-heading"><a src="./blog">Blog Six</a></h2>
                 <p class="blog-intro">
                     I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path. 
                 </p>
@@ -91,11 +118,13 @@ A combination of the css grid, dynamic font sizes, dynamic margin sizes, and med
 
         </div>
 
-        <p>View More</p>
+        <p class="view-more" id="view-more-button">View More</p>
 
         <footer>
             <p class="footer-text">my learning journal</p>
             <p class="footer-copyright">Copyright ©2023</p>
         </footer>
     </body>
+
+    <script src="../js/index.js"></script> 
 </html>
