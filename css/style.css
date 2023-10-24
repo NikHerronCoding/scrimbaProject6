@@ -10,6 +10,11 @@ body {
     box-sizing: border-box;
 }
 
+.nav-list li a {
+    text-decoration: none;
+    color: #090909;
+}
+
 /* nav area */
 header {
     width:100%;
@@ -106,6 +111,12 @@ nav {
     font-size:3vw ;
 }
 
+.banner-head a {
+    color:white;
+    font-family: 'Source Sans 3'; 
+    text-decoration: none;
+}
+
 /*Banner Info expanded*/
 .banner-info {
     display:flex;
@@ -135,7 +146,7 @@ nav {
 }
 
 .info-image{
-    object-fit: none;
+    object-fit:cover;
     object-position: 50%  75%;
     width:90%;
     height: 40vw;
@@ -237,4 +248,38 @@ footer {
 
 #b4, #b5, #b6 {
     display:none;   
+}
+.headshot-container {
+    margin:4vw;
+    
+
+}
+
+
+/*about me page*/
+.headshot {
+
+    object-fit: cover;
+
+    object-position: 0% 0%;
+    border-radius: 50%;
+    width:44vw;
+    height:44vw;
+    
+}
+
+.about-me-intro {
+    font-size:1.4rem;
+    line-height: 200%;
+    width:87%;
+    font-family: 'source sans 3';
+
+}
+
+.about-me-intro h1 {
+    font-weight: bold;
+}
+.about-me-intro p {
+    line-height: 120%;
+
 }

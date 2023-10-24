@@ -3,7 +3,9 @@
 
 
 const viewMoreButton = document.getElementById('view-more-button')
-const bannerTitle = document.getElementById('banner-head');
+const bannerTitle = document.getElementById('banner-head')
+const banner = document.getElementById('banner')
+const bannerInfo = document.getElementById('banner-info')
 
 
 
@@ -18,9 +20,7 @@ function handleViewMore() {
     viewMoreButton.innerText = viewMoreButton.innerText === 'View Less' ? 'View More': 'View Less'
 }
 
-function handleTitleClick() {
 
-}
 
 
 function main() {
@@ -28,9 +28,7 @@ function main() {
         handleViewMore()
     });
 
-    bannerTitle.addEventListener('click', ()=>{
-        handleTitleClick()
-    })
+
 }
 
 main()
