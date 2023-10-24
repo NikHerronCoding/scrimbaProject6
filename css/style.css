@@ -22,6 +22,7 @@ header {
     display:flex;
     align-items:center;
     justify-content: center;
+    background-color:white;
 }
 nav {
     display: flex;
@@ -29,6 +30,10 @@ nav {
     white-space: nowrap;
     align-items:center;
     width:100vw;
+}
+
+body {
+    background-color:#FAFAFA;
 }
 
 /* nav-logo area*/
@@ -76,6 +81,38 @@ nav {
     
 }
 
+/*desktop version modifications*/
+@media(min-width:600px) {
+
+    header {
+        height: 11vw;
+
+    }
+    .logo {
+        margin:3em;
+    }
+
+    .logo-img {
+        width:4vw;
+    }
+    
+    .logo-text {
+        font-size: 2.25vw;
+    }
+    
+    /* nav-text area*/
+    
+    .nav-list {
+        margin-right:2vw;
+        width:20%;
+    
+    }
+    
+    .nav-list li {
+        font-size: 2vw;
+    }
+}
+
 
 /*Banner area*/
 
@@ -116,7 +153,34 @@ nav {
     font-family: 'Source Sans 3'; 
     text-decoration: none;
 }
+/*desktop version modifications*/
+@media(min-width:600px) {
 
+    .banner {
+        height: 60vw;
+    }
+    
+    .banner-date {
+        text-transform: uppercase;
+        font-size: 1.5vw; 
+    }
+
+    .banner-head {
+        font-size:4vw;
+        line-height:120%;
+    }
+    
+    .banner-date, .banner-head, .banner-subheading {
+        margin: 0vw 5vw;
+        
+    }
+    
+    .banner-subheading {
+        margin-bottom: 10rem;
+        font-size:2vw ;
+        width:70%;
+    }
+}
 /*Banner Info expanded*/
 .banner-info {
     display:flex;
@@ -148,15 +212,66 @@ nav {
 .info-image{
     object-fit:cover;
     object-position: 50%  75%;
-    width:90%;
+    width:100%;
     height: 40vw;
-    margin: 2vw auto;
 }
 
 .recent-posts-header {
     margin: 2vh auto;
+    text-align:center;
+    font-size: 3vw;
+    color: #151515;
+    font-family: 'Source Sans 3';
 }
 
+/*desktop version modifications*/
+@media(min-width:600px) {
+
+    .banner-info {
+        display:flex;
+        width:90%;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 2vw auto;
+    
+    }
+    
+    .banner-info-text {
+        color: #151515;
+        font-family: 'Source Sans 3';
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; 
+        margin: 0.5vw auto; 
+        width:90%;
+    }
+    
+    .banner-info-head {
+        color: #151515;
+        font-family: 'Source Sans 3';
+        font-size: 2vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0.5vw auto; 
+        width:90%;
+        
+    }
+    
+    .info-image{
+        object-fit:cover;
+        object-position: 50%  75%;
+        height: 40vw;
+        margin: 2vw auto;
+    }
+    
+    .recent-posts-header {
+        margin: 1vh auto;
+    }
+    
+
+}
 
 
 /* blog-card*/
@@ -213,6 +328,45 @@ nav {
     text-decoration-line: underline; 
 
 }
+
+/*desktop version modifications*/
+@media(min-width:600px) {
+
+    .blog-holder {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .blog-card {
+        max-width: 30vw;
+    }
+    
+    .blog-card img {
+        height: 25vw;
+        width:30vw;
+        border-radius:0.5vw;
+    }
+    
+    .blog-date {
+        font-size:1.5vw;
+    }
+    
+    .blog-heading {
+        font-size:3vw;
+    }
+    
+    .blog-intro {
+        font-size: 1.5vw;
+    }
+    
+    .view-more {
+        font-size: 2vw;
+    }
+}
+
+
+
 /* footer */
 footer {
     height: 25vw;
@@ -249,14 +403,34 @@ footer {
 #b4, #b5, #b6 {
     display:none;   
 }
-.headshot-container {
-    margin:4vw;
+
+/*desktop version modifications*/
+@media(min-width:600px) {
+    footer {
+        height: 12vw;
+        font-size:1.5vw;
     
+    }
+    
+    .footer-text {
+
+        margin: 0.25vw;
+    }
+    
+    .footer-copyright {
+
+        margin:0.25vw;
+    }
 
 }
 
 
 /*about me page*/
+
+.headshot-container {
+    margin:1.5vw 4vw;
+}
+
 .headshot {
 
     object-fit: cover;
@@ -281,5 +455,51 @@ footer {
 }
 .about-me-intro p {
     line-height: 120%;
+
+}
+
+/*desktop version modifications*/
+@media(min-width:600px) {
+    .headshot-container {
+        margin:1.5vw 4vw;
+        display:flex;
+    }
+    
+    .headshot {
+    
+        object-fit: cover;
+    
+        object-position: 0% 0%;
+        border-radius: 50%;
+        width:18vw;
+        height:18vw;
+        
+    }
+    
+    .about-me-intro {
+        font-size:1.4rem;
+        line-height: 200%;
+        width:87%;
+        font-family: 'source sans 3';
+    
+    }
+    
+    .about-me-intro h1 {
+        font-size: 4vw;
+        line-height:105%;
+        font-weight: bold;
+    }
+    .about-me-intro p {
+        line-height: 120%;
+        margin:1vw 4vw;
+        font-size:1.5vw;
+        width:90%;
+    
+    }
+
+    .banner-subheading {
+        margin:1vw 4vw;
+        font-size:1.5vw;
+    }
 
 }
